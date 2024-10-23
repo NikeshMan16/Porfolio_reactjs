@@ -8,9 +8,9 @@ export default function Project() {
     const works = [
         {
             imgSrc: '/images/project-1.jpg',
-            title: 'Full stack music app',
-            tags: ['API', 'MVC', 'Development'],
-            projectLink: 'https://musify-5al0.onrender.com/'
+            title: 'Fake News Detection System',
+            tags: ['Python', 'Machine Learning', ],
+            projectLink: 'https://github.com/NikeshMan16/Major-fake-news-'
         },
         {
             imgSrc: '/images/project-2.jpg',
@@ -42,7 +42,13 @@ export default function Project() {
                 </h2>
 
                 <div>
-                    {works.map(({ imgSrc, title, tags, projectLink },key) => (<ProjectCard/>))}
+                    {works.map(({ imgSrc, title, tags, projectLink },key) => (<ProjectCard
+                    key={key}
+                    imgSrc={imgSrc}
+                    title={title}
+                    tags={tags}
+                    projectLink={projectLink}
+                    />))}
                 </div>
             </div>
             </section>
