@@ -8,6 +8,7 @@ import { FaReact } from "react-icons/fa6";
 import { DiDjango } from "react-icons/di";
 import { AiOutlinePython } from "react-icons/ai";
 import { FaGit } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
 
 import { IconContext } from "react-icons/lib";
 
@@ -48,7 +49,7 @@ export default function Description ()  {
                 <div className={styles.circle}>1</div>
                 <h1 className={styles.title}>About</h1>
                 <p className={styles.Description}>
-                I'm Nikesh Man Shrestha! I'm actively working and pursuing web development, mainly focusing on front-end magic with ReactJS. I'm all about embracing new challenges and learning opportunities. Let's build something awesome together!
+                I'm Nikesh Man Shrestha! I'm actively working and pursuing web development, mainly focusing on front-end magic with <span className={styles.word}>ReactJS</span>. I'm all about embracing new challenges and learning opportunities. Let's build something awesome together!
                 </p>
             </div>
 
@@ -59,10 +60,12 @@ export default function Description ()  {
 
                     <FaHtml5 size={'4rem'} />
                     <FaCss3Alt size={'4rem'} />
+                    <IoLogoJavascript size={'4rem'} />
                     <FaReact size={'4rem'} />
                     <AiOutlinePython size={'4rem'} />
                     <DiDjango size={'4rem'} />
                     <FaGit size={'4rem'} />
+
 
                 </div>
             </div>
